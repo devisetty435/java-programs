@@ -1,13 +1,15 @@
 public class Main
 {
-    public static void add(int n)
+    public void fun(int n)
     {
-    if(n==10) return;
-    System.out.println(n);
-    add(n+1);
+        if(n==11) return;
+        System.out.println(n);
+        fun(n+1);
+        System.out.println(n);
     }
     public static void main(String[] args)
     {
-        add(1);
+        Main m=new Main();
+        m.fun(1);
     }
 }
