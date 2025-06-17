@@ -1,17 +1,23 @@
-public class Main3
-{
-    public int fun(int n)
-    {
-        if(n<=1)
+import java.util.*;
+public class Main3{
+    public static void main (String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String a=sc.nextLine();
+        int vo=0;
+        int con=0;
+        for (int i=0;i<a.length();i++)
         {
-            return n;
+          char ch=a.charAt(i);
+            if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+                vo+=1;}
+                else{
+                    con+=1;
+                    
+                }
         }
-        return fun(n-1)+fun(n-2);
-    }
-    public static void main(String[] args)
-    {
-        Main3 m=new Main3();
-        System.out.println(m.fun(1));
-       
-    }
+              System.out.println(vo);
+              System.out.println(con);
+              
+        }
 }
+
